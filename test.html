@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .video-preview {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .thumbnail-row {
+            text-align: center;
+            background-color: #000;
+        }
+
+        .thumbnail {
+            width: 100%;
+            height: auto;
+        }
+
+        .channel-picture {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .profile-picture {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .video-info {
+            padding: 10px;
+        }
+
+        .video-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+
+        .video-author {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .video-stats {
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-grid">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="">
+            </div>
+            <div class="channel-picture">
+                <img class="profile-picture" src="channel-pictures/channel-1.jpeg" alt="">
+            </div>
+            <div class="video-info">
+                <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                <p class="video-author">Marques Brownlee</p>
+                <p class="video-stats">3.4M views · 6 months ago</p>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="">
+            </div>
+            <div class="channel-picture">
+                <img class="profile-picture" src="channel-pictures/channel-2.jpeg" alt="">
+            </div>
+            <div class="video-info">
+                <p class="video-title">Try Not To Laugh Challenge #9</p>
+                <p class="video-author">Markiplier</p>
+                <p class="video-stats">19M views · 4 years ago</p>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="">
+            </div>
+            <div class="channel-picture">
+                <img class="profile-picture" src="channel-pictures/channel-1.jpeg" alt="">
+            </div>
+            <div class="video-info">
+                <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                <p class="video-author">Marques Brownlee</p>
+                <p class="video-stats">3.4M views · 6 months ago</p>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="">
+            </div>
+            <div class="channel-picture">
+                <img class="profile-picture" src="channel-pictures/channel-1.jpeg" alt="">
+            </div>
+            <div class="video-info">
+                <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                <p class="video-author">Marques Brownlee</p>
+                <p class="video-stats">3.4M views · 6 months ago</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
